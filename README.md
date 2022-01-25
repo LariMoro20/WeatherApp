@@ -1,4 +1,5 @@
-# Avaliação de Frameworks web
+# WeatherApp
+Aplicação de verificação de previsão do tempo utilizando API externa
 
 ## Rodar aplicação
 
