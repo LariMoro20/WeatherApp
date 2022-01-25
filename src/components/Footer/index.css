@@ -1,0 +1,11 @@
+.weather_footer {
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    border-top: 1px solid #333;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+}

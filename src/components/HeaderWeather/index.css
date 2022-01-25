@@ -1,0 +1,13 @@
+.weather_box {
+    padding: 10px;
+    border: 2px solid black;
+    color: #fff;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.weather-box_img {
+    max-width: 100%;
+    width: 128px;
+    filter: invert(100%);
+}

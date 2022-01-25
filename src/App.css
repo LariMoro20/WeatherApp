@@ -28,6 +28,39 @@
   color: #61dafb;
 }
 
+.weather_main {
+  background-color: black;
+  color: white;
+  margin-bottom: 80px;
+}
+.weather_help-list{
+  margin-top: 50px;
+}
+.weather_form {
+  margin-bottom: 10px;
+  border: 2px solid white;
+  padding: 20px;
+}
+
+.weather_form-header {
+  margin-bottom: 10px;
+}
+.full{
+  width: 100%;
+}
+body {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

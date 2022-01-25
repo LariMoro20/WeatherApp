@@ -1,0 +1,13 @@
+.item_box-item {
+    padding: 10px;
+    border: 2px solid black;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: black;
+}
+
+.item_box-item-img {
+    max-width: 100%;
+    width: 138px;
+}
