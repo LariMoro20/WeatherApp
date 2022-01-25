@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import HeaderWeather from '../components/HeaderWeather';
 import ItemBox from '../components/ItemBox';
 import BoxMessage from '../components/BoxMessage';
+import { Link } from 'react-router-dom'
 import axios from 'axios';
 export default function Home() {
     const [weather, setWeathers] = useState([]);
@@ -31,7 +32,9 @@ export default function Home() {
             <div className="weather_form row">
                 <div className="col-md-12 weather_form-header">
                     <h2>Consulta de temperatura</h2>
-                    <p>Para que a consulta seja realizada, é necessario criar uma chave gratuita em: <a href='https://hgbrasil.com/status/weather'>https://hgbrasil.com/status/weather</a></p>
+                    <p>Para que a consulta seja realizada, é necessario criar uma chave gratuita em: 
+                        <a href='https://hgbrasil.com/status/weather'>https://hgbrasil.com/status/weather</a>.<br />
+                        Caso precise de ajuda, acesse nosso <Link to="/help">passo a passo</Link> </p>
                     <small>{error}</small>
                 </div>
                 <form onSubmit={(info) => {
