@@ -41,7 +41,8 @@
 }
 
 .weather_help-list {
-  margin-top: 50px;
+  margin-top: 10px;
+  font-size: 1.3em;
 }
 
 .weather__form {
@@ -50,6 +51,35 @@
 
 .weather__form-header {
   margin-bottom: 10px;
+}
+
+.navegation {
+  padding-top: 15px;
+}
+
+.navegation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegation ul li {
+  display: inline;
+  margin: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+.navegation ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.navegation ul li a:hover {
+  background-color: #7c87926b;
 }
 
 .full {
