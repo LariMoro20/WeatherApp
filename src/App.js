@@ -4,11 +4,19 @@ import Home from './pages/Home';
 import Help from './pages/Help';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import MetaTags from 'react-meta-tags';
 function App() {
 
 
   return (
     <Router>
+      <MetaTags>
+        <title>WeatherApp</title>
+        <meta name="description" content="Aplicação de verificação de previsão do tempo utilizando API externa." />
+        <meta property="author" content="Larissa Santos" />
+        <meta property="og:title" content="WeatherApp" />
+        <meta property="og:image" content="./images/logow.png" />
+      </MetaTags>
       <div className="weather_main">
         <Header />
         <div className="container">

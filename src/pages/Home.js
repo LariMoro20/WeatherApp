@@ -29,16 +29,19 @@ export default function Home() {
 
     return (
         <div className="row">
-            <div className="weather_form row">
-                <div className="col-md-12 weather_form-header">
-                    <h2>Consulta de temperatura</h2>
-                    <p>Para que a consulta seja realizada, é necessario criar uma chave gratuita em: 
-                        <a href='https://hgbrasil.com/status/weather'>https://hgbrasil.com/status/weather</a>.<br />
+            <div className="weather__form row">
+                <div className="col-md-12 weather__form-header">
+                    <h2>Bem vindos ao WeatherApp!</h2>
+                    <p> Aqui, você pode pesquisar a temperatura de uma determinada região no momento e a previsão para os próximos dias. <br />
+                        Para que a consulta seja realizada, é necessario criar uma chave gratuita no site: <a href='https://hgbrasil.com/status/weather'>
+                            https://hgbrasil.com/status/weather
+                        </a>.
+                        <br />
                         Caso precise de ajuda, acesse nosso <Link to="/help">passo a passo</Link> </p>
                     <small>{error}</small>
                 </div>
-                <form onSubmit={(info) => {
-                    info.preventDefault();
+                <form onSubmit={(e) => {
+                    e.preventDefault();
                     getWeather(cityInput, stateInput, key)
                 }} className="row">
                     <div className=" col-md-4">
@@ -47,10 +50,7 @@ export default function Home() {
                                 setCityInput(e.target.value)
                             }}
                         />
-                        {cityInput.length === 0
-                            ? 'Preencha o campo de cidade'
-                            : ''
-                        }<br />
+
                     </div>
                     <div className=" col-md-4">
                         <input type='text' placeholder='SP' className='form-control'
@@ -58,10 +58,7 @@ export default function Home() {
                                 setStateInput(e.target.value)
                             }}
                         />
-                        {stateInput.length === 0
-                            ? 'Preencha o campo do estado'
-                            : ''
-                        }
+
                     </div>
                     <div className=" col-md-2">
                         <input type='text' placeholder='Sua chave de api' className='form-control'
@@ -69,10 +66,7 @@ export default function Home() {
                                 setKey(e.target.value)
                             }}
                         />
-                        {key.length === 0
-                            ? 'Preencha o campo de chave'
-                            : ''
-                        }<br />
+
                     </div>
                     <div className=" col-md-2">
                         <input className='form-control' type='submit' value='Procurar' />
@@ -84,11 +78,11 @@ export default function Home() {
             <div className="weather_content">
                 {typeof weather === "undefined" || weather.length <= 0 ? (
 
-                    <BoxMessage title="Realize a pesquisa no formulario acima" message="" />
+                    <BoxMessage title="" message="" />
                 ) : (
                     <>
                         <HeaderWeather weather={weather} />
-                        <h2>Próximos dias</h2>
+                        <h2>Próximos 10 dias</h2>
                         <ItemBox itens={weather.forecast} />
                     </>
                 )}

@@ -3,11 +3,23 @@
     border: 2px solid black;
     width: 100%;
     margin-bottom: 20px;
-    background-color: #fff;
-    color: black;
+    background-color: #7c7e8a85;
+    color: white;
+    border-radius: 15px;
+
+}
+
+.item_box-item-title {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.item_box-item-text {
+    font-size: 1em;
 }
 
 .item_box-item-img {
     max-width: 100%;
-    width: 138px;
+    width: 100px;
+    filter: invert(100%);
 }

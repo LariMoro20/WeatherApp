@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 export default function Help() {
     return (
         <div className="row">
-            <div className="weather_form row">
-                <div className="col-md-12 weather_form-header">
-                <Link to="/">Voltar</Link>
+            <div className="weather__form row">
+                <div className="col-md-12 weather__form-header">
+                    <Link to="/">Voltar</Link>
                     <h1>Ajuda</h1>
                     <p>Para que a consulta seja realizada, é necessario criar uma chave gratuita em: <a href='https://hgbrasil.com/status/weather'>https://hgbrasil.com/status/weather</a></p>
                 </div>
-                <div className="col-md-12 row weather_form-header">
+                <div className="col-md-12 row weather__form-header">
                     <h3 className='col-md-12'> Passo a passo:</h3>
 
                     <div className='col-md-12'>

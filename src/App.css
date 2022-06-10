@@ -33,21 +33,23 @@
   color: white;
   margin-bottom: 80px;
 }
-.weather_help-list{
+
+.weather_help-list {
   margin-top: 50px;
 }
-.weather_form {
+
+.weather__form {
   margin-bottom: 10px;
-  border: 2px solid white;
-  padding: 20px;
 }
 
-.weather_form-header {
+.weather__form-header {
   margin-bottom: 10px;
 }
-.full{
+
+.full {
   width: 100%;
 }
+
 body {
   background-color: black;
 }
@@ -65,6 +67,7 @@ html, body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

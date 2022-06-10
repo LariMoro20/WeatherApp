@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <>
             <div className="col-md-12 weather_footer">
-                <div className='text-center'>Weather App &copy;  <a href="https://github.com/LariMoro20">Lari Moro </a></div>
+                <div className='text-center'>Weather App &copy;  <a href="https://larissa-santos.vercel.app/">Larissa Santos </a></div>
             </div>
         </>
     )
