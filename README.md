@@ -2,6 +2,8 @@
 
 Aplicação de verificação de previsão do tempo utilizando API externa. Desenvolvida em atividade avaliativa da faculdade em ADS
 
+![imagem](https://github.com/LariMoro20/WeatherApp/blob/master/weater.png)
+
 ## Rodar aplicação
 
 Na pasta do projeto rodar:
